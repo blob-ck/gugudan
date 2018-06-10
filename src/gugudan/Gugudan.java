@@ -72,9 +72,15 @@ public class Gugudan {
 		while(true){
 			
 			System.out.println("구구단 중 출력할 단 입력 : ");
-			
 			Scanner sc = new Scanner(System.in);
 			int dan = sc.nextInt();
+			
+			//2 미만은 무의미하므로 조건 추가 후 continue로 이하 명령문은 무시하고 다시 처음부터 반복문 시작
+			if(dan < 2){
+				System.out.println("2 이상 입력하세요");
+				continue;
+			}
+			
 			System.out.println("몇 배까지 출력? : ");
 			int times = sc.nextInt();
 			
