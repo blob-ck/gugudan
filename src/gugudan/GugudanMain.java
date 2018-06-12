@@ -8,5 +8,8 @@ public class GugudanMain {
 		GugudanMethod.out(times2);
 		int[] times3 = GugudanMethod.cal(3);
 		GugudanMethod.out(times3);
+		
+		Gugudan gugu = new Gugudan();
+		gugu.totalggd();
 	}
 }
